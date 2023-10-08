@@ -10,8 +10,8 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 - [Git](https://git-scm.com);
 - [Flutter](https://docs.flutter.dev/get-started/install) (última versão 3.13);
 - [Android Studio](https://developer.android.com/studio);
-- Android SDK(Instalação via Android Studio);
-- Emulador (Via Android Studio);
+- [Android SDK](https://developer.android.com/studio?gclid=Cj0KCQjwpompBhDZARIsAFD_Fp80R_axKqICpIGwLkF7Ch_KCFe6KTJ4Pvc4IaKs93w_ZkxU_aFZyJsaAmS_EALw_wcB&gclsrc=aw.ds) (Instalação via Android Studio);
+- [Emulador](https://developer.android.com/studio/run/emulator?hl=pt-br#avd) (Instalação via Android Studio);
 
 ### Optional 
 - [Github Desktop](https://desktop.github.com/);
@@ -20,6 +20,7 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 ## 🛠 Tecnologias
 
 As seguintes ferramentas foram usadas na construção do projeto:
+
 ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
 ![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
 ![VSCode](https://img.shields.io/badge/Visual_Studio-0078d7?style=for-the-badge&logo=visual%20studio&logoColor=white)
