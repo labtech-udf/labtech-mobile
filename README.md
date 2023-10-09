@@ -50,6 +50,4 @@ $ flutter run
 
 - Ao subir um código fazer [Commits significativos](https://www.gitkraken.com/learn/git/best-practices/git-commit-message);
 
-- Sempre solicitar um merge request na develop ao terminar a demanda.
-
 ### ● Feito com ❤️ pela Equipe Labtech!
