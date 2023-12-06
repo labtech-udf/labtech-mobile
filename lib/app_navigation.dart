@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 
-import 'app/features/home/pages/home_page.dart';
+import 'app/features/eventos/pages/home_page.dart';
 import 'app_router.dart';
 
 Map<String, dynamic> routerApp(RouteSettings settings) => {

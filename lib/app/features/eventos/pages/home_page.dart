@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:labtech_mobile/app/features/home/widget/eventos_destaque.dart';
-import 'package:labtech_mobile/app/features/home/widget/novos_eventos.dart';
+import 'package:labtech_mobile/app/features/eventos/widget/eventos_destaque.dart';
+import 'package:labtech_mobile/app/features/eventos/widget/novos_eventos.dart';
 import 'package:labtech_mobile/core/design/themes/label_widget.dart';
 
 import '../../../../core/design/themes/colors.dart';
@@ -44,7 +44,6 @@ class _HomePageState extends State<HomePage> {
                       suffixIcon: IconButton(
                         icon: const Icon(Icons.search),
                         onPressed: () {
-                          // Adicione aqui a lógica para lidar com a pesquisa
                         },
                       ),
                     ),
@@ -103,13 +102,6 @@ class _HomePageState extends State<HomePage> {
                           'Fale conosco',
                           style: TextStyles.label1,
                         )),
-                    // Center(
-                    //   child: Row(
-                    //     children: [
-                    //       IconButton(onPressed: () {}, icon: Icon(Icons.abc))
-                    //     ],
-                    //   ),
-                    // )
                   ],
                 )
               ],
