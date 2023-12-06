@@ -23,7 +23,7 @@ class _DetalheEventoPageState extends State<DetalheEventoPage> {
       body: Stack(
         children: [
           Container(
-            color: backgroundColor,
+            color: Colors.blue,
           ),
           SingleChildScrollView(
             child: Container(
