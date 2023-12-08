@@ -41,7 +41,7 @@ class TextStyles {
 
   static TextStyle get headLine2 => GoogleFonts.poppins().copyWith(
         fontSize: 22,
-        color: primaryTextColor,
+        color: backgroundColor,
         fontWeight: FontWeight.w600,
         letterSpacing: 1,
       );
@@ -54,7 +54,7 @@ class TextStyles {
       );
 
   static TextStyle get label1 => GoogleFonts.poppins().copyWith(
-        fontSize: 14,
+        fontSize: 16,
         color: primaryTextColor,
       );
 }
