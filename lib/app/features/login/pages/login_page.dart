@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../../../core/design/widgets/SAppBar.dart';
+
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
 
@@ -11,12 +13,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        elevation: 0,
-        backgroundColor: Colors.white,
-        title: const Text('Menu'),
-        centerTitle: false,
-      ),
+      appBar: SAppBar(context: context, action: null),
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -271,8 +268,7 @@ class _LoginPageState extends State<LoginPage> {
             Padding(
               padding: const EdgeInsets.only(top: 25),
               child: GestureDetector(
-                onTap: () {
-                },
+                onTap: () {},
                 child: const Text.rich(
                   TextSpan(
                     style: TextStyle(

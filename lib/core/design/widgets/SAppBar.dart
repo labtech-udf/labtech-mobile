@@ -24,13 +24,10 @@ class SAppBar extends AppBar {
           titleTextStyle: TextStyles.bodyText9,
           centerTitle: true,
           actions: [
-            if (action !=
-                null) // Adiciona o botão à direita do título apenas se action não for nulo
-              action!,
-            // Adicione seu novo botão à direita do título
+            if (action != null) action!,
             IconButton(
               onPressed: () {
-                // Implemente a lógica para o novo botão aqui
+                Navigator.pushNamed(context, AppRouter.login);
               },
               icon: const Icon(
                 Icons.person_outline,
