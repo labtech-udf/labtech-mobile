@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:labtech_mobile/app/features/login/pages/login_page.dart';
 
-import 'app/features/home/pages/home_page.dart';
+import 'app/features/eventos/pages/detalhe_evento_page.dart';
+import 'app/features/eventos/pages/home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,11 +15,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home:const HomePage(),
+      home: const DetalheEventoPage(),
     );
   }
 }
