@@ -27,12 +27,8 @@ class SAppBar extends AppBar {
             if (action != null) action!,
             IconButton(
               onPressed: () {
-<<<<<<< Updated upstream
-                Navigator.pushNamed(context, AppRouter.login);
-=======
                 Navigator.of(context).pushReplacement(
                     MaterialPageRoute(builder: (context) => LoginPage()));
->>>>>>> Stashed changes
               },
               icon: const Icon(
                 Icons.person_outline,
