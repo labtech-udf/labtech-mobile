@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:labtech_mobile/app/features/login/pages/login_page.dart';
 
-import 'app/features/eventos/pages/detalhe_evento_page.dart';
 import 'app/features/eventos/pages/home_page.dart';
 import 'app_router.dart';
 

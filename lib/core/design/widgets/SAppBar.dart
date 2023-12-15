@@ -1,23 +1,23 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
-
+import 'package:labtech_mobile/app/features/login/pages/login_page.dart';
+import '../../../app/features/eventos/pages/home_page.dart';
 import '../../../app_router.dart';
 import '../themes/colors.dart';
 import '../themes/text_styles.dart';
 
 class SAppBar extends AppBar {
-  final Widget? action; // Alteração: agora é um único widget
+  final Widget? action;
   final BuildContext context;
   final Function? backButtomAction;
 
   SAppBar({
     required this.context,
     this.backButtomAction,
-    this.action, // Alteração: agora é um único widget
+    this.action,
     Key? key,
   }) : super(
           key: key,
-          title: Text(
+          title: const Text(
             'LOGO',
             style: TextStyle(fontWeight: FontWeight.w700, color: Colors.black),
           ),
@@ -27,7 +27,12 @@ class SAppBar extends AppBar {
             if (action != null) action!,
             IconButton(
               onPressed: () {
+<<<<<<< Updated upstream
                 Navigator.pushNamed(context, AppRouter.login);
+=======
+                Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) => LoginPage()));
+>>>>>>> Stashed changes
               },
               icon: const Icon(
                 Icons.person_outline,
@@ -38,11 +43,9 @@ class SAppBar extends AppBar {
           ],
           leading: IconButton(
             onPressed: () {
-              if (backButtomAction == null) {
-                Navigator.pushNamed(context, AppRouter.home);
-              } else {
-                backButtomAction!();
-              }
+              Navigator.of(context).pushReplacement(
+                MaterialPageRoute(builder: (context) => HomePage()),
+              );
             },
             icon: const Icon(
               Icons.home_outlined,

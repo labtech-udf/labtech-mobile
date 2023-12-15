@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 
 import '../../../../core/design/themes/colors.dart';
+import '../pages/detalhe_evento_page.dart';
 
 class EventosDestaque extends StatefulWidget {
   @override
@@ -19,27 +20,9 @@ class _EventosDestaqueState extends State<EventosDestaque> {
           children: [
             CarouselSlider(
               items: [
-                Container(
-                  width: double.infinity,
-                  color: Colors.blue,
-                  child: Center(
-                    child: Text('Slide 1'),
-                  ),
-                ),
-                Container(
-                  width: double.infinity,
-                  color: Colors.green,
-                  child: Center(
-                    child: Text('Slide 2'),
-                  ),
-                ),
-                Container(
-                  width: double.infinity,
-                  color: Colors.red,
-                  child: Center(
-                    child: Text('Slide 3'),
-                  ),
-                ),
+                _buildSlideContainer(Colors.blue, 'Slide 1'),
+                _buildSlideContainer(Colors.green, 'Slide 2'),
+                _buildSlideContainer(Colors.red, 'Slide 3'),
               ],
               options: CarouselOptions(
                 viewportFraction: 1.0,
@@ -69,6 +52,29 @@ class _EventosDestaqueState extends State<EventosDestaque> {
           ],
         ),
       ],
+    );
+  }
+
+  Widget _buildSlideContainer(Color color, String text) {
+    return GestureDetector(
+      onTap: () => _onSlideClicked(color, text),
+      child: Container(
+        width: double.infinity,
+        color: color,
+        child: Center(
+          child: Text(text),
+        ),
+      ),
+    );
+  }
+
+  void _onSlideClicked(Color color, String text) {
+    // Substitua pelo código de navegação para a página de detalhes
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => DetalheEventoPage(),
+      ),
     );
   }
 
