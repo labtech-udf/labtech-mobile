@@ -49,7 +49,7 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                 ),
-                const SizedBox(height: 45),
+                const SizedBox(height: 16),
                 const Padding(
                   padding: const EdgeInsets.only(left: 16),
                   child: Align(
@@ -58,7 +58,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
                 NovosEventos(),
-                const SizedBox(height: 10),
+                const SizedBox(height: 16),
                 const Padding(
                   padding: const EdgeInsets.only(left: 16),
                   child: Align(
@@ -67,7 +67,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
                 NovosEventos(),
-                const SizedBox(height: 10),
+                const SizedBox(height: 16),
                 const Padding(
                   padding: EdgeInsets.only(left: 16),
                   child: Align(
@@ -77,7 +77,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
                 NovosEventos(),
-                const SizedBox(height: 10),
+                const SizedBox(height: 16),
                 const Padding(
                   padding: EdgeInsets.only(left: 16.0, right: 16.0),
                   child: Divider(),

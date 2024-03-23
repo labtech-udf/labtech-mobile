@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 
@@ -22,11 +24,15 @@ class _NovosEventosState extends State<NovosEventos> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        CarouselSlider(
+
+       CarouselSlider(
+
           items: [
+
             _buildSlideContainer(Colors.blue, 'Slide 1', 0),
             _buildSlideContainer(Colors.green, 'Slide 2', 1),
             _buildSlideContainer(Colors.red, 'Slide 3', 2),
+
           ],
           options: CarouselOptions(
             height: 150.0,
@@ -44,7 +50,9 @@ class _NovosEventosState extends State<NovosEventos> {
             scrollPhysics: BouncingScrollPhysics(),
           ),
         ),
-      ],
+    ],
+
+
     );
   }
 

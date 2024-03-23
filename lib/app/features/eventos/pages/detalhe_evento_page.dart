@@ -86,13 +86,13 @@ class _DetalheEventoPageState extends State<DetalheEventoPage> {
 
                 Padding(
                   padding:
-                      const EdgeInsets.only(left: 100.0, right: 100, top: 40),
+                  const EdgeInsets.only(left: 100.0, right: 100, top: 40),
                   child: SizedBox(
                     height: 50,
                     child: ElevatedButton(
                       style: ButtonStyle(
                         backgroundColor:
-                            MaterialStateProperty.all<Color>(secondaryColor),
+                        MaterialStateProperty.all<Color>(secondaryColor),
                       ),
                       onPressed: () {},
                       child: Text('Participar', style: TextStyles.headLine2),
@@ -113,7 +113,7 @@ class _DetalheEventoPageState extends State<DetalheEventoPage> {
 
                 LabelWidget(text: 'descrição'),
                 Padding(
-                  padding: const EdgeInsets.only(top: 8.0, left: 16, right: 16),
+                  padding: const EdgeInsets.only(top: 8.0, left: 20, right: 20),
                   child: Text(
                     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
                     style: TextStyles.bodyText1,
