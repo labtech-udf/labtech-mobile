@@ -21,7 +21,7 @@ class SAppBar extends AppBar {
             'LOGO',
             style: TextStyle(fontWeight: FontWeight.w700, color: Colors.black),
           ),
-          titleTextStyle: TextStyles.bodyText9,
+          // titleTextStyle: TextStyles.bodyText9,
           centerTitle: true,
           actions: [
             if (action != null) action!,

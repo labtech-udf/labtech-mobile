@@ -40,7 +40,7 @@ class _HomePageState extends State<HomePage> {
                       fillColor: backgroundTextBoxColor,
                       filled: true,
                       hintText: 'Pesquisar eventos',
-                      hintStyle: TextStyles.bodyText1,
+                      // hintStyle: TextStyles.bodyText1,
                       suffixIcon: IconButton(
                         icon: const Icon(Icons.search),
                         onPressed: () {
@@ -88,19 +88,19 @@ class _HomePageState extends State<HomePage> {
                         onPressed: () {},
                         child: Text(
                           'Sobre nós',
-                          style: TextStyles.label1,
+                          // style: TextStyles.label1,
                         )),
                     TextButton(
                         onPressed: () {},
                         child: Text(
                           'FAQ',
-                          style: TextStyles.label1,
+                          // style: TextStyles.label1,
                         )),
                     TextButton(
                         onPressed: () {},
                         child: Text(
                           'Fale conosco',
-                          style: TextStyles.label1,
+                          // style: TextStyles.label1,
                         )),
                   ],
                 )

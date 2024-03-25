@@ -11,7 +11,9 @@ class LabelWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.fromLTRB(16, 16, 0, 10),
-      child: Text(text.toUpperCase(), style: TextStyles.label1),
+      child: Text(text.toUpperCase(),
+      // style: TextStyles.label1
+       ),
     );
   }
 }

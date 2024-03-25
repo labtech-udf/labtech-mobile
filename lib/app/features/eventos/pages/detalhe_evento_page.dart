@@ -42,7 +42,9 @@ class _DetalheEventoPageState extends State<DetalheEventoPage> {
                 ),
                 Padding(
                   padding: const EdgeInsets.all(16.0),
-                  child: Text('Nome do evento', style: TextStyles.headLine1),
+                  child: Text('Nome do evento', 
+                  // style: TextStyles.headLine1
+                ),
                 ),
                 Padding(
                   padding: const EdgeInsets.only(left: 16.0),
@@ -52,7 +54,7 @@ class _DetalheEventoPageState extends State<DetalheEventoPage> {
                       SizedBox(width: 8), // Espaçamento entre o ícone e o texto
                       Text(
                         'Sexta-feira, 05/01/2023',
-                        style: TextStyles.label1,
+                        // style: TextStyles.label1,
                       )
                     ],
                   ),
@@ -65,7 +67,7 @@ class _DetalheEventoPageState extends State<DetalheEventoPage> {
                       SizedBox(width: 8), // Espaçamento entre o ícone e o texto
                       Text(
                         '19h',
-                        style: TextStyles.label1,
+                        // style: TextStyles.label1,
                       )
                     ],
                   ),
@@ -78,7 +80,7 @@ class _DetalheEventoPageState extends State<DetalheEventoPage> {
                       SizedBox(width: 8), // Espaçamento entre o ícone e o texto
                       Text(
                         '704/904 Seps Eq 702/902, Brasília - DF',
-                        style: TextStyles.label1,
+                        // style: TextStyles.label1,
                       )
                     ],
                   ),
@@ -95,7 +97,9 @@ class _DetalheEventoPageState extends State<DetalheEventoPage> {
                         MaterialStateProperty.all<Color>(secondaryColor),
                       ),
                       onPressed: () {},
-                      child: Text('Participar', style: TextStyles.headLine2),
+                      child: Text('Participar', 
+                      // style: TextStyles.headLine2
+                      ),
                     ),
                   ),
                 ),
@@ -116,7 +120,7 @@ class _DetalheEventoPageState extends State<DetalheEventoPage> {
                   padding: const EdgeInsets.only(top: 8.0, left: 20, right: 20),
                   child: Text(
                     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-                    style: TextStyles.bodyText1,
+                    // style: TextStyles.bodyText1,
                   ),
                 ),
 
@@ -131,19 +135,19 @@ class _DetalheEventoPageState extends State<DetalheEventoPage> {
                         onPressed: () {},
                         child: Text(
                           'Sobre nós',
-                          style: TextStyles.label1,
+                          // style: TextStyles.label1,
                         )),
                     TextButton(
                         onPressed: () {},
                         child: Text(
                           'FAQ',
-                          style: TextStyles.label1,
+                          // style: TextStyles.label1,
                         )),
                     TextButton(
                         onPressed: () {},
                         child: Text(
                           'Fale conosco',
-                          style: TextStyles.label1,
+                          // style: TextStyles.label1,
                         )),
                   ],
                 )
