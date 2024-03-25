@@ -66,7 +66,7 @@ class _DetalheEventoPageState extends State<DetalheEventoPage> {
                       const Icon(Icons.schedule),
                       SizedBox(width: 8), // Espaçamento entre o ícone e o texto
                       Text(
-                        '19h',
+                        '18h',
                         // style: TextStyles.label1,
                       )
                     ],
@@ -98,7 +98,7 @@ class _DetalheEventoPageState extends State<DetalheEventoPage> {
                       ),
                       onPressed: () {},
                       child: Text('Participar', 
-                      // style: TextStyles.headLine2
+                      style: TextStyle(color: Colors.white)
                       ),
                     ),
                   ),
