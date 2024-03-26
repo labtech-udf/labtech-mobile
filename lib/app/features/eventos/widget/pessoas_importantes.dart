@@ -27,10 +27,10 @@ class _PessoasImportantesState extends State<PessoasImportantes> {
 
 
                CarouselSlider(
-                items: [
-                  Align(
-                    alignment: Alignment(-8,0.0),
-                  child:
+                 items: [
+                   Align(
+                     alignment: Alignment(-7.5,10.0),
+                   child:
                   Container(
                     height: 150.0,
                     width: MediaQuery.of(context).size.width * 0.5,
@@ -42,10 +42,10 @@ class _PessoasImportantesState extends State<PessoasImportantes> {
                       child: Text('Slide 1'),
                     ),
                   ),
-                  ),
+                   ),
                   Align(
-                  alignment: Alignment(-8,0.0),
-                  child:
+                  alignment: Alignment(-5,10.0),
+                   child:
                     Container(
                     height: 150.0,
                     width: MediaQuery.of(context).size.width * 0.5,
@@ -59,8 +59,8 @@ class _PessoasImportantesState extends State<PessoasImportantes> {
                   ),
                   ),
                   Align(
-                    alignment: Alignment(-8,0.0),
-                    child:
+                  alignment: Alignment(-2.0,10.0),
+                  child:
                   Container(
                     height: 150.0,
                     width: MediaQuery.of(context).size.width * 0.5,
