@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:labtech_mobile/app/features/eventos/widget/eventos_destaque.dart';
-import 'package:labtech_mobile/app/features/eventos/widget/novos_eventos.dart';
+import 'package:labtech_mobile/features/features/eventos/widget/eventos_destaque.dart';
+import 'package:labtech_mobile/features/features/eventos/widget/novos_eventos.dart';
 import 'package:labtech_mobile/core/design/themes/label_widget.dart';
 
 import '../../../../core/design/themes/colors.dart';

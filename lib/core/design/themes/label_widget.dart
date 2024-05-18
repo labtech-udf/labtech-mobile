@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../themes/text_styles.dart';
-
 class LabelWidget extends StatelessWidget {
   final String text;
 

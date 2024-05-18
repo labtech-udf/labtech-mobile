@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:labtech_mobile/app/features/login/pages/login_page.dart';
-import '../../../app/features/eventos/pages/home_page.dart';
-import '../../../app_router.dart';
+import 'package:labtech_mobile/features/features/login/pages/login_page.dart';
+import '../../../features/features/eventos/pages/home_page.dart';
 import '../themes/colors.dart';
-import '../themes/text_styles.dart';
+
 
 class SAppBar extends AppBar {
   final Widget? action;
