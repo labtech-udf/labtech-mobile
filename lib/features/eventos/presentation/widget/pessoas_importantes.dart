@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:labtech_mobile/core/design/themes/label_widget.dart';
 
-import '../../../../core/design/themes/colors.dart';
+import '../../../../../core/design/themes/colors.dart';
 
 class PessoasImportantes extends StatefulWidget {
   @override

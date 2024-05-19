@@ -3,7 +3,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 
-import '../../../../core/design/themes/colors.dart';
+import '../../../../../core/design/themes/colors.dart';
 import '../pages/detalhe_evento_page.dart';
 
 class NovosEventos extends StatefulWidget {

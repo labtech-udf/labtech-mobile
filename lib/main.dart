@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'features/features/eventos/pages/home_page.dart';
+import 'features/eventos/presentation/pages/home_page.dart';
 import 'app_router.dart';
 
 void main() {

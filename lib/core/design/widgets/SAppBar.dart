@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:labtech_mobile/features/features/login/pages/login_page.dart';
-import '../../../features/features/eventos/pages/home_page.dart';
+import 'package:labtech_mobile/features/login/presentation/pages/login_page.dart';
+import '../../../features/eventos/presentation/pages/home_page.dart';
 import '../themes/colors.dart';
 
 

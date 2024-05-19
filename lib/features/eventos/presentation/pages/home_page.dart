@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:labtech_mobile/features/features/eventos/widget/eventos_destaque.dart';
-import 'package:labtech_mobile/features/features/eventos/widget/novos_eventos.dart';
+import 'package:labtech_mobile/features/eventos/presentation/widget/eventos_destaque.dart';
+import 'package:labtech_mobile/features/eventos/presentation/widget/novos_eventos.dart';
 import 'package:labtech_mobile/core/design/themes/label_widget.dart';
 
-import '../../../../core/design/themes/colors.dart';
-import '../../../../core/design/themes/text_styles.dart';
-import '../../../../core/design/themes/textbox_decorations.dart';
-import '../../../../core/design/widgets/SAppBar.dart';
+import '../../../../../core/design/themes/colors.dart';
+import '../../../../../core/design/themes/text_styles.dart';
+import '../../../../../core/design/themes/textbox_decorations.dart';
+import '../../../../../core/design/widgets/SAppBar.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
