@@ -25,7 +25,6 @@ class _HomePageState extends State<HomePage> {
       body: Stack(
         children: [
           Container(
-            color: backgroundColor,
           ),
           SingleChildScrollView(
             child: Column(

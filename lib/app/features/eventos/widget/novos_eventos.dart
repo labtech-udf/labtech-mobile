@@ -32,7 +32,6 @@ class _NovosEventosState extends State<NovosEventos> {
             _buildSlideContainer(Colors.blue, 'Slide 1', 0),
             _buildSlideContainer(Colors.green, 'Slide 2', 1),
             _buildSlideContainer(Colors.red, 'Slide 3', 2),
-
           ],
           options: CarouselOptions(
             height: 150.0,
