@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:labtech_mobile/core/design/widgets/DetalheAppBar.dart';
 import 'package:labtech_mobile/features/eventos/presentation/widget/eventos_destaque.dart';
 import 'package:labtech_mobile/features/eventos/presentation/widget/novos_eventos.dart';
 import 'package:labtech_mobile/core/design/themes/label_widget.dart';
@@ -6,7 +7,6 @@ import 'package:labtech_mobile/core/design/themes/label_widget.dart';
 import '../../../../../core/design/themes/colors.dart';
 import '../../../../../core/design/themes/text_styles.dart';
 import '../../../../../core/design/themes/textbox_decorations.dart';
-import '../../../../../core/design/widgets/SAppBar.dart';
 import '../widget/pessoas_importantes.dart';
 
 class DetalheEventoPage extends StatefulWidget {
@@ -20,7 +20,7 @@ class _DetalheEventoPageState extends State<DetalheEventoPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: SAppBar(context: context, action: null),
+      appBar: DetalheAppBar(context: context, action: null),
       body: Stack(
         children: [
           Container(
@@ -42,9 +42,10 @@ class _DetalheEventoPageState extends State<DetalheEventoPage> {
                 ),
                 Padding(
                   padding: const EdgeInsets.all(16.0),
-                  child: Text('Nome do evento', 
-                  // style: TextStyles.headLine1
-                ),
+                  child: Text(
+                    'Nome do evento',
+                    // style: TextStyles.headLine1
+                  ),
                 ),
                 Padding(
                   padding: const EdgeInsets.only(left: 16.0),
@@ -88,18 +89,17 @@ class _DetalheEventoPageState extends State<DetalheEventoPage> {
 
                 Padding(
                   padding:
-                  const EdgeInsets.only(left: 100.0, right: 100, top: 40),
+                      const EdgeInsets.only(left: 100.0, right: 100, top: 40),
                   child: SizedBox(
                     height: 50,
                     child: ElevatedButton(
                       style: ButtonStyle(
                         backgroundColor:
-                        MaterialStateProperty.all<Color>(secondaryColor),
+                            MaterialStateProperty.all<Color>(secondaryColor),
                       ),
                       onPressed: () {},
-                      child: Text('Participar', 
-                      style: TextStyle(color: Colors.white)
-                      ),
+                      child: Text('Participar',
+                          style: TextStyle(color: Colors.white)),
                     ),
                   ),
                 ),
