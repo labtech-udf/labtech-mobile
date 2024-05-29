@@ -16,13 +16,14 @@ class UsuarioDatasourceImpl implements UsuarioDatasource {
   @override
   Future<Map<String, dynamic>?> cadastrarUsuario(
       {required CadastroUsuarioModel usuario}) async {
+    print('cheguei aqui');
     try {
       var result = await client.post(
           baseOptions: HttpConfig.localhost,
           endpoint: EndPointsConsts.cadastroUsuario,
           data: usuario.toJson());
-
       if (result.statusCode == 200) {
+        print('Deu bom');
         final usuario = result.data;
         return usuario;
       } else {

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:labtech_mobile/app_router.dart';
 
 import '../../../../../core/design/widgets/SAppBar.dart';
 
@@ -18,11 +19,10 @@ class _LoginPageState extends State<LoginPage> {
         child: Column(
           children: [
             Container(
-              height: 199,
+              height: 300,
               width: 450,
-              color: const Color(0xFF6891F2),
               child: Image.asset(
-                'assets/images/girl.png',
+                'assets/images/login.png',
                 height: 179,
                 width: 197.9,
               ),
@@ -104,162 +104,18 @@ class _LoginPageState extends State<LoginPage> {
                 ],
               ),
             ),
-            Container(
-              margin: const EdgeInsets.only(top: 20),
-              child: const Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 35),
-                    child: Row(
-                      children: [
-                        Expanded(
-                          child: Divider(
-                            color: Color(0xFFF0EDFF),
-                            thickness: 2,
-                          ),
-                        ),
-                        Padding(
-                          padding: EdgeInsets.symmetric(horizontal: 3),
-                          child: Text(
-                            'Entre',
-                            style: TextStyle(
-                                fontSize: 18,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.black),
-                          ),
-                        ),
-                        Padding(
-                          padding: EdgeInsets.symmetric(horizontal: 3),
-                          child: Text(
-                            'com outras',
-                            style: TextStyle(
-                                fontSize: 18,
-                                color: Color.fromARGB(255, 76, 76, 76)),
-                          ),
-                        ),
-                        Expanded(
-                          child: Divider(
-                            color: Color(0xFFF0EDFF),
-                            thickness: 2,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(left: 34, top: 25, right: 34),
-              child: ElevatedButton(
-                onPressed: () {},
-                style: ElevatedButton.styleFrom(
-                  foregroundColor:
-                      const Color.fromARGB(255, 166, 204, 235).withOpacity(0.1),
-                  backgroundColor: Colors.white,
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(16),
-                  ),
-                  side: const BorderSide(
-                    width: 1.5,
-                    color: Color(0xFFF0EDFF),
-                  ),
-                ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    FittedBox(
-                      fit: BoxFit.contain,
-                      child: Image.asset(
-                        'assets/icons/favicon.ico',
-                        width: 24,
-                        height: 24,
-                      ),
-                    ),
-                    const SizedBox(width: 8),
-                    const Text.rich(
-                      TextSpan(
-                        style: TextStyle(
-                          fontSize: 14,
-                          color: Colors.black,
-                        ),
-                        children: [
-                          TextSpan(text: 'Entre com o '),
-                          TextSpan(
-                            text: 'Google',
-                            style: TextStyle(fontWeight: FontWeight.bold),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(left: 34, top: 25, right: 34),
-              child: ElevatedButton(
-                onPressed: () {},
-                style: ElevatedButton.styleFrom(
-                  foregroundColor:
-                      const Color.fromARGB(255, 166, 204, 235).withOpacity(0.1),
-                  backgroundColor: Colors.white,
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 16, vertical: 9),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(16),
-                  ),
-                  side: const BorderSide(
-                    width: 1.5,
-                    color: Color(0xFFF0EDFF),
-                  ),
-                ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    FittedBox(
-                      fit: BoxFit.contain,
-                      child: Image.asset(
-                        'assets/icons/iconFacebook.png',
-                        width: 40,
-                        height: 40,
-                      ),
-                    ),
-                    const SizedBox(width: 0),
-                    const Text.rich(
-                      TextSpan(
-                        style: TextStyle(
-                          fontSize: 14,
-                          color: Colors.black,
-                        ),
-                        children: [
-                          TextSpan(text: 'Entre com o '),
-                          TextSpan(
-                            text: 'Facebook',
-                            style: TextStyle(fontWeight: FontWeight.bold),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
             Padding(
               padding: const EdgeInsets.only(left: 8.0, top: 30),
               child: ElevatedButton(
                 onPressed: () {},
                 style: ElevatedButton.styleFrom(
                   foregroundColor: Colors.white,
-                  backgroundColor: const Color(0xFF3A5CC0),
+                  backgroundColor: const Color(0xFF112D4E),
                   elevation: 4,
                   padding:
                       const EdgeInsets.symmetric(horizontal: 65, vertical: 15),
                   shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20.77),
+                    borderRadius: BorderRadius.circular(7),
                   ),
                 ),
                 child: const Text('Entrar'),
@@ -268,7 +124,11 @@ class _LoginPageState extends State<LoginPage> {
             Padding(
               padding: const EdgeInsets.only(top: 25),
               child: GestureDetector(
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).pushNamed(
+                    AppRouter.cadastroUsuario,
+                  );
+                },
                 child: const Text.rich(
                   TextSpan(
                     style: TextStyle(

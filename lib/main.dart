@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 
 import 'features/eventos/presentation/pages/home_page.dart';
+import 'core/injection/app_injection.dart';
 import 'app_router.dart';
 
-void main() {
+void main() async {
+  await AppInjection.init();
   runApp(const MyApp());
 }
 
