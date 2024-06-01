@@ -23,3 +23,8 @@ const Color borderColorAlertCard = Color(0xFFEBEFF4);
 const Color modalColor = Color(0xFFE3EDF6);
 
 const Color white = Color(0xFFFFFFFF);
+
+
+// Cores para ícones e logo
+const Color iconColorLight = Color(0xFF00164A); // Cor para ícones e logo no tema claro
+const Color iconColorDark = Color(0xFFD0E4FF); // Cor para ícones e logo no tema escuro

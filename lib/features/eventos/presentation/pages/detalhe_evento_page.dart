@@ -24,7 +24,6 @@ class _DetalheEventoPageState extends State<DetalheEventoPage> {
       body: Stack(
         children: [
           Container(
-            color: backgroundColor,
           ),
           SingleChildScrollView(
             child: Column(
@@ -115,7 +114,7 @@ class _DetalheEventoPageState extends State<DetalheEventoPage> {
                   child: Divider(),
                 ),
 
-                LabelWidget(text: 'descrição'),
+                const LabelWidget(text: 'descrição'),
                 Padding(
                   padding: const EdgeInsets.only(top: 8.0, left: 20, right: 20),
                   child: Text(
@@ -133,19 +132,19 @@ class _DetalheEventoPageState extends State<DetalheEventoPage> {
                   children: [
                     TextButton(
                         onPressed: () {},
-                        child: Text(
+                        child: const Text(
                           'Sobre nós',
                           // style: TextStyles.label1,
                         )),
                     TextButton(
                         onPressed: () {},
-                        child: Text(
+                        child: const Text(
                           'FAQ',
                           // style: TextStyles.label1,
                         )),
                     TextButton(
                         onPressed: () {},
-                        child: Text(
+                        child: const Text(
                           'Fale conosco',
                           // style: TextStyles.label1,
                         )),

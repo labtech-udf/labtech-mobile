@@ -4,7 +4,7 @@ import '../../../features/eventos/presentation/pages/home_page.dart';
 import '../themes/colors.dart';
 
 
-class SAppBar extends AppBar {
+class SAppBar extends AppBar{
   final Widget? action;
   final BuildContext context;
   final Function? backButtomAction;
@@ -18,7 +18,7 @@ class SAppBar extends AppBar {
           key: key,
           title: const Text(
             'LOGO',
-            style: TextStyle(fontWeight: FontWeight.w700, color: Colors.black),
+            style: TextStyle(fontWeight: FontWeight.w700,color: Colors.black)
           ),
           // titleTextStyle: TextStyles.bodyText9,
           centerTitle: true,
@@ -48,7 +48,7 @@ class SAppBar extends AppBar {
               size: 35,
             ),
           ),
-          backgroundColor: backgroundColor,
+
           elevation: 0,
         );
 }
