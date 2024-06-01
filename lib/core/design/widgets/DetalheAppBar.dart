@@ -3,12 +3,12 @@ import 'package:labtech_mobile/features/login/presentation/pages/login_page.dart
 import '../../../features/eventos/presentation/pages/home_page.dart';
 import '../themes/colors.dart';
 
-class SAppBar extends AppBar {
+class DetalheAppBar extends AppBar {
   final Widget? action;
   final BuildContext context;
   final Function? backButtomAction;
 
-  SAppBar({
+  DetalheAppBar({
     required this.context,
     this.backButtomAction,
     this.action,
@@ -16,8 +16,8 @@ class SAppBar extends AppBar {
   }) : super(
           key: key,
           title: const Text(
-            'LOGO',
-            style: TextStyle(fontWeight: FontWeight.w700,color: Colors.black)
+            'Nome do Evento',
+            style: TextStyle(fontWeight: FontWeight.w700, color: Colors.black),
           ),
           // titleTextStyle: TextStyles.bodyText9,
           centerTitle: true,
@@ -35,6 +35,16 @@ class SAppBar extends AppBar {
               ),
             ),
           ],
+          leading: IconButton(
+            onPressed: () {
+              Navigator.popUntil(context, (route) => route.isFirst);
+            },
+            icon: const Icon(
+              Icons.arrow_back_outlined,
+              color: Colors.black,
+              size: 35,
+            ),
+          ),
           backgroundColor: backgroundColor,
           elevation: 0,
         );

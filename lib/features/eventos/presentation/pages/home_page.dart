@@ -42,8 +42,7 @@ class _HomePageState extends State<HomePage> {
                       // hintStyle: TextStyles.bodyText1,
                       suffixIcon: IconButton(
                         icon: const Icon(Icons.search),
-                        onPressed: () {
-                        },
+                        onPressed: () {},
                       ),
                     ),
                   ),

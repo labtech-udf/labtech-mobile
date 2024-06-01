@@ -24,11 +24,8 @@ class _NovosEventosState extends State<NovosEventos> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-
-       CarouselSlider(
-
+        CarouselSlider(
           items: [
-
             _buildSlideContainer(Colors.blue, 'Slide 1', 0),
             _buildSlideContainer(Colors.green, 'Slide 2', 1),
             _buildSlideContainer(Colors.red, 'Slide 3', 2),
@@ -49,9 +46,7 @@ class _NovosEventosState extends State<NovosEventos> {
             scrollPhysics: BouncingScrollPhysics(),
           ),
         ),
-    ],
-
-
+      ],
     );
   }
 
