@@ -15,10 +15,9 @@ class SAppBar extends AppBar {
     Key? key,
   }) : super(
           key: key,
-          title: const Text(
-            'LOGO',
-            style: TextStyle(fontWeight: FontWeight.w700,color: Colors.black)
-          ),
+          title: const Text('LABTECH',
+              style:
+                  TextStyle(fontWeight: FontWeight.w700, color: Colors.black)),
           // titleTextStyle: TextStyles.bodyText9,
           centerTitle: true,
           actions: [

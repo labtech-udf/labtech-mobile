@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:labtech_mobile/app_router.dart';
+import 'package:labtech_mobile/core/design/themes/colors.dart';
 import 'package:labtech_mobile/core/design/widgets/AppBarNav.dart';
+import 'package:labtech_mobile/features/login/presentation/pages/login_page.dart';
 import 'package:labtech_mobile/features/usuarios/data/models/cadastro_usuario_model.dart';
 import 'package:labtech_mobile/features/usuarios/presentation/controllers/cadastro_usuario_controller.dart';
 
@@ -33,8 +35,8 @@ class _CadastroUsuarioPageState extends State<CadastroUsuarioPage> {
               child: Column(
                 children: [
                   if (_showError)
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
+                    const Padding(
+                      padding: EdgeInsets.all(8.0),
                       child: Text(
                         'Preencha todos os dados do formulário',
                         style: TextStyle(color: Colors.red, fontSize: 16),
@@ -174,18 +176,28 @@ class _CadastroUsuarioPageState extends State<CadastroUsuarioPage> {
                   Padding(
                     padding: const EdgeInsets.only(left: 8.0, top: 30),
                     child: ElevatedButton(
-                      onPressed: () {
+                      onPressed: () async {
                         setState(() {
                           _showError = !_controller.formCadastro.currentState!
                               .validate();
                         });
 
                         if (!_showError) {
-                          _controller.enviarDados(
-                              usuario: CadastroUsuarioModel(
-                                  name: _controller.name.text,
-                                  email: _controller.email.text,
-                                  password: _controller.password.text));
+                          final result = await _controller.enviarDados(
+                            usuario: CadastroUsuarioModel(
+                              name: _controller.name.text,
+                              email: _controller.email.text,
+                              password: _controller.password.text,
+                            ),
+                          );
+
+                          if (result != null) {
+                            _showModal(context,
+                                'Cadastro realizado com sucesso! Faça seu login para aproveitar o que o app tem a oferecer.');
+                          } else {
+                            _showModal(context,
+                                'Falha no cadastro, favor tente novamente mais tarde!');
+                          }
                         }
                       },
                       style: ElevatedButton.styleFrom(
@@ -236,6 +248,81 @@ class _CadastroUsuarioPageState extends State<CadastroUsuarioPage> {
           );
         },
       ),
+    );
+  }
+
+  void _showModal(BuildContext context, String message) {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          content: SingleChildScrollView(
+            child: ConstrainedBox(
+              constraints: const BoxConstraints(
+                maxWidth: 400, // Define o tamanho máximo da modal
+                maxHeight: 500, // Define o tamanho máximo da modal
+              ),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  message ==
+                          'Falha no cadastro, favor tente novamente mais tarde!'
+                      ? Image.asset(
+                          'assets/images/error.png',
+                          height: 300,
+                          width: 300,
+                        )
+                      : Image.asset(
+                          'assets/images/sucess.png',
+                          height: 300,
+                          width: 300,
+                        ),
+                  SizedBox(height: 20),
+                  Text(
+                    message,
+                    style: TextStyle(fontSize: 20),
+                    textAlign: TextAlign.center,
+                  ),
+                ],
+              ),
+            ),
+          ),
+          actions: <Widget>[
+            message == 'Falha no cadastro, favor tente novamente mais tarde!'
+                ? ElevatedButton(
+                    onPressed: () {
+                      Navigator.of(context).pop();
+                    },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor:
+                          primaryColor, // Altere para a cor desejada
+                    ),
+                    child: const Text(
+                      'OK',
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  )
+                : ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => LoginPage(),
+                        ),
+                      );
+                    },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor:
+                          primaryColor, // Altere para a cor desejada
+                    ),
+                    child: const Text(
+                      'Fazer login',
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  ),
+          ],
+        );
+      },
     );
   }
 }

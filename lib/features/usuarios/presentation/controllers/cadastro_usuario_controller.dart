@@ -30,7 +30,6 @@ abstract class _CadastroUsuarioControllerBase with Store {
     try {
       Map<String, dynamic>? result;
       result = await enviarCadastroUsecase.cadastrarUsuario(usuario: usuario);
-      print(result);
       return result;
     } catch (e) {
       return {"sucesso": false, "mensagem": e.toString()};

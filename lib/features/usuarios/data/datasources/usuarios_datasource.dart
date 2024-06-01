@@ -16,7 +16,6 @@ class UsuarioDatasourceImpl implements UsuarioDatasource {
   @override
   Future<Map<String, dynamic>?> cadastrarUsuario(
       {required CadastroUsuarioModel usuario}) async {
-    print('cheguei aqui');
     try {
       var result = await client.post(
           baseOptions: HttpConfig.localhost,
@@ -25,6 +24,7 @@ class UsuarioDatasourceImpl implements UsuarioDatasource {
       if (result.statusCode == 200) {
         print('Deu bom');
         final usuario = result.data;
+        print('oiiiiii $usuario');
         return usuario;
       } else {
         throw ServerException(result.statusMessage);

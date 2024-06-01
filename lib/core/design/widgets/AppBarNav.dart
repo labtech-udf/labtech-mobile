@@ -9,13 +9,21 @@ class AppBarNav extends AppBar {
   final BuildContext context;
   AppBarNav({required this.context, required this.titleText, super.key})
       : super(
-          title: Text(
-            titleText,
-            style: TextStyle(fontWeight: FontWeight.w700, color: Colors.black),
+          title: Padding(
+            padding: const EdgeInsets.only(left: 120.0),
+            child: Text(
+              titleText,
+              style:
+                  TextStyle(fontWeight: FontWeight.w700, color: Colors.black),
+            ),
           ),
           leading: IconButton(
             onPressed: () {
-              Navigator.pop(context);
+              if (context == true) {
+                Navigator.pop(context);
+              }else{
+                
+              }
             },
             icon: const Icon(Icons.arrow_back_ios, color: primaryTextColor),
 

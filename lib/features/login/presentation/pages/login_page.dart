@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:labtech_mobile/app_router.dart';
+import 'package:labtech_mobile/core/design/widgets/second_AppBar.dart';
 
 import '../../../../../core/design/widgets/SAppBar.dart';
 
@@ -14,7 +15,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: SAppBar(context: context, action: null),
+      appBar: SecondAppBar(context: context, action: null),
       body: SingleChildScrollView(
         child: Column(
           children: [
